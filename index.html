@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Tênis - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="masculino.html">Masculino</a>
+            <a href="feminino.html">Feminino</a>
+            <a href="infantil.html">Infantil</a>
+            <a href="ofertas.html">Ofertas</a>
+            <input type="text" class="search-bar" placeholder="Buscar tênis, marcas...">
+            <button id="toggle-dark" title="Alternar modo escuro">🌙</button>
+            <a href="login.html" class="login-link">Entrar</a>
+            <span id="cart-count">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/cart.svg" alt="Carrinho" style="width:20px;vertical-align:middle;margin-right:4px;">
+                Carrinho: 0
+            </span></span>
+        </nav>
+    </header>
+
+    
+    
+    <!-- Banner -->
+    <section class="banner">
+        <img src="img/tenis-banner.jpg" alt="Banner Tênis" class="banner-img">
+        <div class="banner-texto">
+            <h1>Bem-vindo à Sneaker Store</h1>
+            <p id="p-principal">Os melhores modelos, conforto e estilo para você.</p>
+        </div>
+    </section>
+
+    <!-- Produtos em destaque -->
+    <section class="destaques">
+        <h2>Tênis em Destaque</h2>
+        <div class="cards">
+        <div class="card">
+             <img src="img/tenis1.avif" alt="Tênis 1" class="produto-img">
+             <h3>Tênis Esportivo</h3>
+             <p>R$ 199,90</p>
+             <button class="btn comprar">Comprar</button>
+             <button class="btn ver-mais">Ver Mais</button>
+            <div class="descricao-extra" style="display:none;">
+        <p>O Tênis Esportivo oferece alta performance para corridas e treinos, com solado antiderrapante e tecido respirável para máximo conforto.</p>
+    </div>
+</div>
+            <div class="card">
+                <img src="img/tenis2.webp" alt="Tênis 2" class="produto-img">
+                <h3>Tênis Casual</h3>
+                <p>R$ 249,90</p>
+                <button class="btn comprar">Comprar</button>
+                <button class="btn ver-mais">Ver Mais</button>
+                <div class="descricao-extra" style="display:none;">
+        <p>O Tênis Casual é perfeito para o dia a dia, combinando estilo moderno com leveza e flexibilidade. Ideal para passeios e uso urbano.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/tenis3.webp" alt="Tênis 3" class="produto-img">
+                <h3>Tênis Fashion</h3>
+                <p>R$ 299,90</p>
+                <button class="btn comprar">Comprar</button>
+                <button class="btn ver-mais">Ver Mais</button>
+            <div class="descricao-extra" style="display:none;">
+        <p>Este tênis é feito com materiais premium, ideal para quem busca conforto e estilo em qualquer ocasião.</p>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Botão subir ao topo -->
+    <button id="btn-topo">⬆️</button>
+    
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>Contato: contato@sneakerstore.com | (54) 99999-9999</p>
+            <p>Siga nas redes sociais: @SneakerStore</p>
+            <p>&copy; 2025 Sneaker Store</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    
+
+</body>
+</html>

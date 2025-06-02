@@ -1,0 +1,175 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main.login-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: #fff;
+    padding: 38px 32px 28px 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+}
+
+.login-container h2 {
+    color: #ff6600;
+    margin-bottom: 24px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.login-container label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    display: block;
+    color: #222;
+    text-align: left;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 2px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border 0.2s;
+    background: #fafafa;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border: 1.5px solid #ff6600;
+    outline: none;
+    background: #fff;
+}
+
+.login-container .btn-login {
+    width: 100%;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.login-container .btn-login:hover {
+    background: #222;
+    color: #fff;
+    transform: scale(1.04);
+}
+
+.login-container .link-cadastro {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 8px;
+    transition: color 0.2s;
+    text-align: center;
+    display: block;
+}
+
+.login-container .link-cadastro:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+/* Mensagem de erro */
+.login-container .erro {
+    color: #ff3333;
+    font-size: 0.98em;
+    margin-bottom: 6px;
+    margin-top: 0;
+    text-align: left;
+    min-height: 18px;
+    display: block;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 22px 8vw 18px 8vw;
+    }
+}
+
+/* Modo escuro para tela de login */
+body.dark-mode {
+    background: #181818;
+    color: #f7f7f7;
+}
+
+body.dark-mode .login-container {
+    background: #232323;
+    color: #f7f7f7;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+
+body.dark-mode .login-container h2 {
+    color: #ffb366;
+}
+
+body.dark-mode .login-container label {
+    color: #f7f7f7;
+}
+
+body.dark-mode .login-container input[type="text"],
+body.dark-mode .login-container input[type="password"] {
+    background: #181818;
+    color: #fff;
+    border: 1.5px solid #444;
+}
+
+body.dark-mode .login-container input[type="text"]:focus,
+body.dark-mode .login-container input[type="password"]:focus {
+    background: #232323;
+    border: 1.5px solid #ffb366;
+}
+
+body.dark-mode .btn-login {
+    background: #ffb366;
+    color: #232323;
+}
+
+body.dark-mode .btn-login:hover {
+    background: #fff;
+    color: #222;
+}
+
+body.dark-mode .link-cadastro {
+    color: #ffb366;
+}
+
+body.dark-mode .link-cadastro:hover {
+    color: #fff;
+}

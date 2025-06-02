@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Tênis - Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="masculino.html">Masculino</a>
+            <a href="feminino.html">Feminino</a>
+            <a href="infantil.html">Infantil</a>
+            <a href="ofertas.html">Ofertas</a>
+            <input type="text" class="search-bar" placeholder="Buscar tênis, marcas...">
+            <button id="toggle-dark" title="Alternar modo escuro">🌙</button>
+            <a href="login.html" class="login-link">Entrar</a>
+            <span id="cart-count">
+                <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/cart.svg" alt="Carrinho" style="width:20px;vertical-align:middle;margin-right:4px;">
+                Carrinho: 0
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-produtos">Todos os Tênis</h1>
+        <section class="lista-produtos">
+            <div class="produto-card">
+                <img src="img/tenis1.avif" alt="Tênis Esportivo" class="produto-img">
+                <div>
+                    <h2>Tênis Esportivo</h2>
+                    <p>Ideal para corridas e treinos, com amortecimento especial.</p>
+                    <span class="preco">R$ 199,90</span>
+                    <button class="btn comprar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="img/tenis2.webp" alt="Tênis Casual" class="produto-img">
+                <div>
+                    <h2>Tênis Casual</h2>
+                    <p>Conforto e estilo para o dia a dia, combina com tudo.</p>
+                    <span class="preco">R$ 249,90</span>
+                    <button class="btn comprar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="img/tenis3.webp" alt="Tênis Fashion" class="produto-img">
+                <div>
+                    <h2>Tênis Fashion</h2>
+                    <p>Design moderno para quem gosta de se destacar.</p>
+                    <span class="preco">R$ 299,90</span>
+                    <button class="btn comprar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="img/tenis4.webp" alt="Tênis Infantil" class="produto-img">
+                <div>
+                    <h2>Tênis Infantil</h2>
+                    <p>Colorido, resistente e confortável para os pequenos.</p>
+                    <span class="preco">R$ 159,90</span>
+                    <button class="btn comprar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="produto-card">
+                <img src="img/tenis5.webp" alt="Tênis Premium" class="produto-img">
+                <div>
+                    <h2>Tênis Premium</h2>
+                    <p>Material de alta qualidade e acabamento impecável.</p>
+                    <span class="preco">R$ 399,90</span>
+                    <button class="btn comprar">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de contato -->
+        <section class="contato">
+            <h2>Fale Conosco</h2>
+            <form id="form-contato" novalidate>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <span class="erro" id="erro-nome"></span>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="erro" id="erro-email"></span>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <span class="erro" id="erro-mensagem"></span>
+
+                <button type="submit" class="btn enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Botão subir ao topo -->
+    <button id="btn-topo">⬆️</button>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>Contato: contato@sneakerstore.com | (54) 99999-9999</p>
+            <p>Siga nas redes sociais: @SneakerStore</p>
+            <p>&copy; 2025 Sneaker Store</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
