@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de Tênis - Produtos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,6 +40,32 @@
                     <button class="btn comprar">Adicionar ao Carrinho</button>
                 </div>
             </div>
+
+            <section class="filtro-produtos">
+                <h2>Filtrar Produtos</h2>
+                <form id="form-filtro">
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Todas</option>
+                        <option value="esportivo">Esportivo</option>
+                        <option value="casual">Casual</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="infantil">Infantil</option>
+                        <option value="premium">Premium</option>
+                    </select>
+            
+                    <label for="preco-min">Preço Mínimo:</label>
+                    <input type="number" id="preco-min" name="preco-min" min="0">
+            
+                    <label for="preco-max">Preço Máximo:</label>
+                    <input type="number" id="preco-max" name="preco-max" min="0">
+            
+                    <label for="busca">Palavra-chave:</label>
+                    <input type="text" id="busca" name="busca" placeholder="Buscar...">
+            
+                    <button type="button" id="btn-filtrar" class="btn filtrar">Filtrar</button>
+                </form>
+            </section>
             <div class="produto-card">
                 <img src="img/tenis2.webp" alt="Tênis Casual" class="produto-img">
                 <div>
@@ -110,5 +137,6 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="produtos.js"></script>
 </body>
 </html>

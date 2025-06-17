@@ -1,0 +1,48 @@
+.filtro-produtos {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    position: absolute;
+    left: 0;
+    top: 165px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.filtro-produtos form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.filtro-produtos label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.filtro-produtos input,
+.filtro-produtos select,
+.filtro-produtos button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filtro-produtos button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filtro-produtos button:hover {
+    background-color: #0056b3;
+}
+
